@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 404</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .error-content{
+            text-align: center;
+            padding: 200px;
+        }
+        #back-btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container error-content">
+    <h1 class="display-1">404</h1>
+    <p class="lead">Oops! Page not found.</p>
+    <div id="back-btn" class="btn btn-primary">Go Back</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#back-btn').click(function(){
+            window.history.back();
+        });
+    });
+</script>
+</body>
+</html>
+</body>
+</html>
