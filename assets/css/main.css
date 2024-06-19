@@ -1753,6 +1753,3 @@ div [class^="col-"]{
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1);
 }
-/*--------------------------------------------------------------
-----baris-------
---------------------------------------------------------------*/
