@@ -81,7 +81,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  
   transition: all 0.5s;
   z-index: 997;
 }
@@ -91,7 +91,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 150px;
   margin-right: 8px;
 }
 
@@ -107,6 +107,27 @@ h6 {
   color: var(--accent-color);
   font-size: 36px;
 }
+
+#sugoi{
+  width: 300px;
+  position: relative;
+  left: 325px;
+  top: 0px;
+  
+}
+
+@font-face {
+  font-family: 'Rami';
+  src: url('../fonts/kareudon/Rami.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+#posizioneNav ul li a{
+  font-family: 'Rami', Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -178,7 +199,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 15px;
+    font-size: 35px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 500;
