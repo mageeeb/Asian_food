@@ -656,7 +656,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+  background: linear-gradient(180deg,#FF8914 0%, #FF8914 5%,#ff2147 100%);
   width: 100%;
   min-height: 60vh;
   position: relative;
