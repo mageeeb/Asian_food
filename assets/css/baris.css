@@ -87,7 +87,7 @@ body {
 }
 
 .card .stars li a i {
-    color: #e6e32f;
+    color: #f36608;
     font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .card a.btn {
     display: block;
-    background: #ef3e36;
+    background: #e2970a;
     color: #fff;
     position: relative;
     text-transform: uppercase;
