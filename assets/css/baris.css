@@ -87,7 +87,7 @@ body {
 }
 
 .card .stars li a i {
-    color: #f36608;
+    color: #f8ae0f;
     font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .card a.btn {
     display: block;
-    background: #e2970a;
+    background: #ef3e36;
     color: #fff;
     position: relative;
     text-transform: uppercase;
@@ -113,17 +113,17 @@ body {
     transition: background 250ms;
 }
 .card1 .header {
-  background-image: url('/assets/img/baris/chiness.jpg'); 
+  background-image: url('../img/baris/chiness.jpg'); 
 }
 
 .card2 .header {
-  background-image: url('/assets/img/baris/japan.webp'); 
+  background-image: url('../img/baris/japan.webp'); 
 }
 
 .card3 .header {
-  background-image: url('/assets/img/baris/Korean\ Street\ Food.jpg'); 
+  background-image: url('../img/baris/Korean\ Street\ Food.jpg'); 
 }
 
 .card4 .header {
-  background-image: url('/assets/img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
+  background-image: url('../img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
 }
