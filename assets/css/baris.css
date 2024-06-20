@@ -24,17 +24,17 @@ body {
 
 #cont {
     display: flex;
-    flex-wrap: nowrap; /* Assure que les cartes restent sur une seule ligne */
-    justify-content: center; /* Centre les cartes horizontalement */
-    gap: 20px; /* Espace entre les cartes */
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    gap: 20px; 
     padding: 20px;
-    overflow: hidden; /* Cache tout dépassement pour éviter le défilement horizontal */
+    overflow: hidden; 
 }
 
 .card {
     position: relative;
     background: #fff;
-    width: 250px; /* Réduit la largeur pour s'assurer que toutes les cartes tiennent dans une rangée */
+    width: 250px; 
     margin: 20px;
     box-shadow: 0px 0px 30px 2px #000;
     overflow: hidden;
@@ -44,7 +44,7 @@ body {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(241, 119, 4, 0.445) 0px -36px 30px 0px inset, rgba(228, 104, 4, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .card .header {
@@ -87,7 +87,8 @@ body {
 }
 
 .card .stars li a i {
-    color: #ffe500;
+    color: #e6e32f;
+    font-weight: bold;
 }
 
 .card .info {
@@ -111,9 +112,6 @@ body {
     background: #17bebb;
     transition: background 250ms;
 }
-
-/* Spécifiez les images pour chaque carte individuellement */
-
 .card1 .header {
   background-image: url('/assets/img/baris/chiness.jpg'); 
 }
