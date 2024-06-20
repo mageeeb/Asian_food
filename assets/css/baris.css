@@ -1,64 +1,131 @@
-/*--------------------------------------------------------------
-----baris-------
---------------------------------------------------------------*/
-img{
-    height:150px;
-    width:100%;
-  }
-  
-  div [class^="col-"]{
-    padding-left:5px;
-    padding-right:5px;
-  }
-  .card{
-    transition:0.5s;
-    cursor:pointer;
-  }
-  .card-title{  
-    font-size:15px;
-    transition:1s;
-    cursor:pointer;
-  }
-  .card-title i{  
-    font-size:15px;
-    transition:1s;
-    cursor:pointer;
-    color:#ffa710
-  }
-  .card-title i:hover{
-    transform: scale(1.25) rotate(100deg); 
-    color:#18d4ca;
-    
-  }
-  .card:hover{
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("https://wallpaperscraft.com/image/coffee_coffee_beans_cupcake_candy_93301_1920x1080.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#cont {
+    display: flex;
+    flex-wrap: nowrap; /* Assure que les cartes restent sur une seule ligne */
+    justify-content: center; /* Centre les cartes horizontalement */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px;
+    overflow: hidden; /* Cache tout dépassement pour éviter le défilement horizontal */
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    width: 250px; /* Réduit la largeur pour s'assurer que toutes les cartes tiennent dans une rangée */
+    margin: 20px;
+    box-shadow: 0px 0px 30px 2px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
     transform: scale(1.05);
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-  }
-  .card-text{
-    height:80px;  
-  }
-  
-  .card::before, .card::after {
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .header {
+    background-size: cover;
+    min-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .header .icon a .fa-heart-o {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: scale3d(0, 0, 1);
-    transition: transform .3s ease-out 0s;
-    background: rgba(255, 255, 255, 0.1);
-    content: '';
-    pointer-events: none;
-  }
-  .card::before {
-    transform-origin: left top;
-  }
-  .card::after {
-    transform-origin: right bottom;
-  }
-  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
-    transform: scale3d(1, 1, 1);
-  }
-  /*--------------------------------------------------------------
-  ----baris-------
-  --------------------------------------------------------------*/
+    left: 85%;
+    bottom: 30.7%;
+    background: #17bebb;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17bebb;
+}
+
+.card .text .food {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+
+.card .text .fa-clock-o, .card .text .fa-users {
+    color: #9b9b9b;
+    margin: 0 30px;
+}
+
+.card .stars {
+    margin: 10px 30px;
+    display: flex;
+}
+
+.card .stars li a i {
+    color: #ffe500;
+}
+
+.card .info {
+    margin: 10px 30px;
+}
+
+.card a.btn {
+    display: block;
+    background: #ef3e36;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: background 250ms;
+    border-radius: 0 0 10px 10px;
+}
+
+.card a.btn:hover {
+    background: #17bebb;
+    transition: background 250ms;
+}
+
+/* Spécifiez les images pour chaque carte individuellement */
+
+.card1 .header {
+  background-image: url('/assets/img/baris/chiness.jpg'); 
+}
+
+.card2 .header {
+  background-image: url('/assets/img/baris/japan.webp'); 
+}
+
+.card3 .header {
+  background-image: url('/assets/img/baris/Korean\ Street\ Food.jpg'); 
+}
+
+.card4 .header {
+  background-image: url('/assets/img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
+}
