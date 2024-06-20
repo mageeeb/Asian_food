@@ -655,8 +655,15 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Guigui';
+  src: url('../fontGui/GuiFont.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 .hero {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
+  background: linear-gradient(180deg,#FF8914 0%, #FF8914 5%,#ff2147 100%);
   width: 100%;
   min-height: 60vh;
   position: relative;
@@ -667,8 +674,9 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 64px;
+  font-size: 84px;
   font-weight: 700;
+  font-family: Guigui;
 }
 
 .hero p {
