@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,340 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="../../assets/css/main.css" rel="stylesheet">
     <link href="assets/css/baris.css" rel="stylesheet">
+    <link href="anthonyStyle.css" rel="stylesheet">
 
     <title>Document</title>
 </head>
+
 <body>
-<!--Votre code ici-->
+    <!--Votre code ici-->
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
 
-<!--fin de votre code-->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Nos recettes</h2>
+            <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
+        </div><!-- End Section Title -->
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <div class="container">
 
-<!-- Main JS File -->
-<script src="baris.js"></script>
-<script src="assets/js/main.js"></script>
+            <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+                <li class="nav-item">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+                        <h4>Nouveautés</h4>
+                    </a>
+                </li><!-- End tab nav item -->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+                        <h4>Chinoise</h4>
+                    </a><!-- End tab nav item -->
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+                        <h4>Thaï</h4>
+                    </a>
+                </li><!-- End tab nav item -->
+
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+                        <h4>Japonaise</h4>
+                    </a>
+                </li><!-- End tab nav item -->
+
+            </ul>
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="tab-pane fade active show" id="menu-starters">
+
+                    <div class="tab-header text-center">
+
+                    </div>
+
+                    <div class="row gy-5">
+                        <div class="col-12" id="containerCarousel">
+                            <a href="#" role="button" data-slide="prev">
+                                <img src="arrowLeft.png" alt="" class="flecheGauche">
+                            </a>
+                            <a href="#" role="button" data-slide="next">
+                                <img src="arrowRight.png" alt="" class="flecheDroite">
+                            </a>
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid " alt="poulet bock shoy"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 1</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 2</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 3</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 4</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 5</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 6</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div><!-- Menu Item -->
+
+
+
+
+
+
+                    </div>
+                </div><!-- End Starter Menu Content -->
+
+                <div class="tab-pane fade" id="menu-breakfast">
+
+                    <div class="tab-header text-center">
+
+                    </div>
+
+                    <div class="row gy-5">
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="../../assets/img/menu/menu-item-1.png" class="glightbox"><img
+                                    src="../../assets/img/menu/menu-item-1.png" class="menu-img img-fluid " alt=""></a>
+                            <h4>Recette 1</h4>
+
+
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="../../assets/img/menu/menu-item-2.png" class="glightbox"><img
+                                    src="../../assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                            <h4>Recette 2</h4>
+
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="../../assets/img/menu/menu-item-3.png" class="glightbox"><img
+                                    src="../../assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                            <h4>Recette 3</h4>
+
+                        </div><!-- Menu Item -->
+
+
+
+
+
+
+                    </div>
+                </div><!-- End Breakfast Menu Content -->
+
+                <div class="tab-pane fade" id="menu-lunch">
+
+                    <div class="tab-header text-center">
+
+                    </div>
+
+                    <div class="row gy-5">
+                        <div class="col-12" id="containerCarousel2">
+                            <a href="#carousel2" role="button" data-bs-slide="prev" onclick="event.preventDefault()">
+                                <img src="arrowLeft.png" alt="" class="flecheGauche">
+                            </a>
+                            <a href="#carousel2" role="button" data-bs-slide="next" onclick="event.preventDefault()">
+                                <img src="arrowRight.png" alt="" class="flecheDroite">
+                            </a>
+                            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img" alt="poulet bock shoy"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 1</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 2</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 3</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 4</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 5</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mb-3 menu-item">
+                                                <div class="card border-0">
+                                                    <img class="img-fluid" alt="100%x280"
+                                                        src="noodles-meat-vegetables-isolated-on-600nw-1026270289-removebg-preview.png">
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h4 class="card-title">Recette 6</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="menu-dinner">
+
+                    <div class="tab-header text-center">
+
+                    </div>
+
+                    <div class="row gy-5">
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="../../assets/img/menu/menu-item-1.png" class="glightbox"><img
+                                    src="../../assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                            <h4>Recette 1</h4>
+
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="../../assets/img/menu/menu-item-2.png" class="glightbox"><img
+                                    src="../../assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                            <h4>Recette 2</h4>
+
+                        </div><!-- Menu Item -->
+
+                        <div class="col-lg-4 menu-item">
+                            <a href="../../assets/img/menu/menu-item-3.png" class="glightbox"><img
+                                    src="../../assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                            <h4>Recette 3</h4>
+
+                        </div><!-- Menu Item -->
+
+
+
+
+
+
+                    </div>
+                </div><!-- End Dinner Menu Content -->
+
+
+
+            </div>
+
+    </section><!-- /Menu Section -->
+    <!--fin de votre code-->
+
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="baris.js"></script>
+    <script src="anthony.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
