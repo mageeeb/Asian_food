@@ -408,6 +408,13 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'RamRam';
+  src: url('../fontNav&Footer/Rami.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 .footer {
   --background-color: var(--alt-background-color);
   --default-color: #ffff;
@@ -423,12 +430,13 @@ h6 {
 .footer .icon {
   color: var(--accent-color);
   margin-right: 15px;
-  font-size: 24px;
+  margin-top: 15px;
+  font-size: 30px;
   line-height: 0;
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 55px;
   font-weight: 700;
   margin-bottom: 15px;
 }
