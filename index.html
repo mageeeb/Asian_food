@@ -23,6 +23,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -45,39 +46,39 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-       <img  src="assets/img/logo/fox-logo.png" alt="">
+       <img  id="fox" src="assets/img/logo/fox-logo.png" alt="">
         <span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Accueil<br></a></li>
-          <li><a href="#about"></a></li>
-          <li><a href="#menu">Recettes</a></li>
-          <li><a href="#events">About Us</a></li>
-          <li><a href="#chefs">Contact</a></li>
+          <li><a class="fs-sm-4" href="#hero" class="active"><img class="iconR" src="assets/img/button/home.png" alt=""> Accueil<br></a></li>
+         
           
-          
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                 
-                </ul>
-              </li>
-              
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+            <li class="dropdown"><a href="#menu"><span><img style="padding-left: 5px;"  class="iconR" src="assets/img/button/ramen.png" alt=""> Recettes</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul class="sousMenu">
+              <li><a class="fs-4" href="#">Recettes 1</a></li>
+              <li><a class="fs-4" href="#">Recettes 2</a></li>
+              <li><a class="fs-4" href="#">Recettes 3</a></li>
+              <li><a class="fs-4" href="#">Recettes 4</a></li>
+              <li><a class="fs-4" href="#">Recettes 5</a></li>
+
             </ul>
-          </li>
+         
+          <li><a href="#abouts"><img class="iconR" src="assets/img/button/about.png" alt="">About Us</a></li>
+          <li><a href="#chefs"><img class="iconR" src="assets/img/button/contact-book.png" alt="">Contact</a></li>
+          
+          
+         </li>
           <img  id="sugoi"  src="assets/img/logo/vagues-navbar-nobackground.png" alt="">
+          <script>
+           $(document).ready(function(){
+    $("#sugoi").animate({left: '350px'}, {duration : 1050});
+    });
+
+
+
+          </script>
           
         </ul>
         

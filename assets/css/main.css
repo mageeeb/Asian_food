@@ -109,11 +109,16 @@ h6 {
 }
 
 #sugoi{
-  width: 300px;
+  width: 150px;
   position: relative;
   left: 325px;
   top: 0px;
   
+}
+
+.sousMenu li a{
+font-weight: 500px;  
+font-size: 500px;
 }
 
 @font-face {
@@ -160,6 +165,10 @@ h6 {
   .header .navmenu {
     order: 3;
   }
+
+  #sugoi{
+    display: none;
+  }
 }
 
 .scrolled .header {
@@ -174,6 +183,17 @@ h6 {
   .navmenu {
     padding: 0;
   }
+
+  .iconR{
+    width: 30px;
+    padding-right: 10px;
+  }
+
+  .sousMenu li a{
+    font-weight: 500px;  
+    font-size: 1px;
+    }
+    
 
   .navmenu ul {
     margin: 0;
@@ -312,6 +332,10 @@ h6 {
     transition: color 0.3s;
   }
 
+  .iconR{
+    display: none;
+  }
+
   .navmenu {
     padding: 0;
     z-index: 9997;
@@ -337,7 +361,7 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 28px;
     font-weight: 500;
     display: flex;
     align-items: center;
