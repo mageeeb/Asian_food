@@ -127,3 +127,19 @@ body {
 .card4 .header {
   background-image: url('../img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
 }
+
+@media (max-width: 992px) {
+    #cont {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+ 
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+}
