@@ -174,3 +174,4 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+feather.replace()
