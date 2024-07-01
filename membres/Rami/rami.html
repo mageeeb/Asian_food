@@ -27,11 +27,67 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/baris.css" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Navbar</title>
 </head>
-<body>
+
 <!--Votre code ici-->
 
+
+  <body class="index-page">
+  
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <img  id="sugoi2"  src="assets/img/logo/vagues-navbar-nobackground.png" alt="">
+      <div id="posizioneNav" class="container position-relative d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+         <img  id="fox" src="assets/img/logo/fox-logo.png" alt="">
+          <span></span>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a class="fs-sm-4" href="#hero" class="active"><img class="iconR" src="assets/img/button/home.png" alt=""> Accueil<br></a></li>
+           
+            
+              <li class="dropdown"><a href="#menu"><span><img style="padding-left: 5px;"  class="iconR" src="assets/img/button/ramen.png" alt=""> Recettes</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul class="sousMenu">
+                <li><a class="fs-4" href="#">Recettes 1</a></li>
+                <li><a class="fs-4" href="#">Recettes 2</a></li>
+                <li><a class="fs-4" href="#">Recettes 3</a></li>
+                <li><a class="fs-4" href="#">Recettes 4</a></li>
+                <li><a class="fs-4" href="#">Recettes 5</a></li>
+  
+              </ul>
+           
+            <li><a href="#abouts"><img class="iconR" src="assets/img/button/about.png" alt="">About Us</a></li>
+            <li><a href="#chefs"><img class="iconR" src="assets/img/button/contact-book.png" alt="">Contact</a></li>
+            
+            
+           </li>
+            <img  id="sugoi"  src="assets/img/logo/vagues-navbar-nobackground.png" alt="">
+            <script>
+             $(document).ready(function(){
+      $("#sugoi").animate({left: '420px'}, {duration : 1050});
+      $("#sugoi2").animate({left: '-10px'}, {duration : 1050});
+      });
+  
+  
+  
+            </script>
+            
+          </ul>
+          
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          
+        </nav>
+  
+       
+  
+      </div>
+    </header>
+  
 <!--fin de votre code-->
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
