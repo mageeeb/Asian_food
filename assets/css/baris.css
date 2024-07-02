@@ -143,3 +143,358 @@ body {
         margin: 20px auto;
     }
 }
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("https://wallpaperscraft.com/image/coffee_coffee_beans_cupcake_candy_93301_1920x1080.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+#cont {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; /
+    padding: 20px;
+    overflow: hidden; 
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    background: #fff;
+    width: 250px; /* Fixed width for each card */
+    margin: 20px;
+    box-shadow: 0px 0px 30px 2px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(241, 119, 4, 0.445) 0px -36px 30px 0px inset, 
+                rgba(228, 104, 4, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card .header {
+    background-size: cover;
+    min-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .header .icon a .fa-heart-o {
+    position: absolute;
+    left: 85%;
+    bottom: 30.7%;
+    background: #17bebb;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17bebb;
+}
+
+.card .text .food {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+
+.card .text .fa-clock-o, .card .text .fa-users {
+    color: #9b9b9b;
+    margin: 0 30px;
+}
+
+.card .stars {
+    margin: 10px 30px;
+    display: flex;
+}
+
+.card .stars li a i {
+    color: #f8ae0f;
+    font-weight: bold;
+}
+
+.card .info {
+    margin: 10px 30px;
+}
+
+.card a.btn {
+    display: block;
+    background: #ef3e36;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: background 250ms;
+    border-radius: 0 0 10px 10px;
+}
+
+.card a.btn:hover {
+    background: #17bebb;
+    transition: background 250ms;
+}
+.card1 .header {
+    background-image: url('../img/baris/chiness.jpg'); 
+}
+
+.card2 .header {
+    background-image: url('../img/baris/japan.webp'); 
+}
+
+.card3 .header {
+    background-image: url('../img/baris/Korean\ Street\ Food.jpg'); 
+}
+
+.card4 .header {
+    background-image: url('../img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
+}
+
+@media (max-width: 992px) {
+    #cont {
+        flex-wrap: wrap; 
+    }
+    .card {
+        width: calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 40px); 
+        margin: 20px auto; 
+    }
+}
+
+/* footer */ 
+.footer {
+    background-color: #24262b;
+    padding: 50px 0;
+    text-align: center; 
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .footer-col {
+    flex: 1 1 250px;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 50px; 
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%); 
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 20px; 
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+  
+  .footer-col .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 2px solid #ccc; 
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  .newsletter-col {
+    text-align: center;
+    margin-bottom: 50px; 
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .newsletter-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: #f81404;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #f81404;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px; 
+  }
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .footer-col {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer .footer-col-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 100px; 
+    height: auto; 
+    max-width: 100%; 
+}
+  
+@media (max-width: 1200px) {
+    .footer .container {
+      max-width: 90%;
+      padding: 0 10px;
+      gap: 30px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-col {
+      width: 100%;
+      margin-bottom: 30px; 
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .footer-col {
+      width: 100%;
+      margin-bottom: 20px; 
+    }
+  }
+  
+  
+/* footer */ 
