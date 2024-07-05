@@ -1,0 +1,174 @@
+footer {
+    background-image: url(assets/img/baris/footerImg.png) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px; /* Augmentation de l'espace à gauche et à droite, et en haut et en bas */
+    margin: auto;
+    text-align: center;
+    min-height: 400px;
+    color: #ffffff;
+    
+  
+  }
+  img {
+    max-width: 100%;
+}
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  .footer-col {
+    flex: 1 1 250px;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 100%;
+    
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background-color: #e91e63; /* Couleur de la ligne */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px; /* Largeur de la ligne */
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 5px 5px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  .newsletter-col {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto; 
+  }
+  
+  .newsletter-form input[type="email"]::placeholder {
+    font-size: 18px;
+    color: #bbbbbb;
+    opacity: 1;
+    width: 200%; 
+  }
+  
+  .newsletter-form input[type="email"] {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200%;
+    max-width: 300px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: #f81404;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #d11204;
+  }
+  
+  .footer-colll {
+     background-color: #000;
+    color: white;
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  #sociall-footer{
+    margin-left: 120px!important;
+  }
+  
+  #imgg{
+    margin-left: -290px!important;
+  }
+  
+  #recettee{
+    margin-left:-120px !important;
+  }
+  
+  #newss{
+    margin-left: 100px!important;
+  }
