@@ -301,8 +301,8 @@ body {
 }
 
 /* footer */ 
-.footer {
-  background-image: ;
+footer {
+  background-image: url(/assets/img/baris/footerImg.png) ;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,14 +417,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin: 0 auto; /* Centre le formulaire horizontalement */
+  margin: 0 auto; 
 }
 
 .newsletter-form input[type="email"]::placeholder {
   font-size: 18px;
   color: #bbbbbb;
   opacity: 1;
-  width: 100%; /* Ajuste la largeur du placeholder */
+  width: 200%; 
 }
 
 .newsletter-form input[type="email"] {
@@ -433,7 +433,7 @@ body {
   border: none;
   border-radius: 5px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 200%;
   max-width: 300px;
 }
 
@@ -467,9 +467,12 @@ body {
 }
 
 #recettee{
-  margin-left:
+  margin-left:-120px !important;
 }
 
+#newss{
+  margin-left: 100px!important;
+}
 /* Media queries */
 
 @media (max-width: 1200px) {
