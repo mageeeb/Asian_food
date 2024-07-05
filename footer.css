@@ -11,7 +11,9 @@ footer {
     
   
   }
-  
+  img {
+    max-width: 100%;
+}
   .footer .container {
     display: flex;
     flex-wrap: wrap;
