@@ -1,0 +1,9 @@
+#backgroundSushi{
+    background-image: url("seafood-sushi-dish-with-details-simple-black-background.jpg");
+    height: 500px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+  
+}
