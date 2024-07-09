@@ -1,0 +1,259 @@
+
+
+.card {
+    position: relative;
+    /*background: #fff;*/
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0px 0px 30px 2px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(241, 119, 4, 0.445) 0px -36px 30px 0px inset, rgba(228, 104, 4, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card .header {
+    background-size: cover;
+    min-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .header .icon a .fa-heart-o {
+    position: absolute;
+    left: 85%;
+    bottom: 30.7%;
+    background: #17bebb;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17bebb;
+}
+
+.card .text .food {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+
+.card .text .fa-clock-o, .card .text .fa-users {
+    color: #9b9b9b;
+    margin: 0 30px;
+}
+
+.card .stars {
+    margin: 10px 30px;
+    display: flex;
+}
+
+.card .stars li a i {
+    color: #f8ae0f;
+    font-weight: bold;
+}
+
+.card .info {
+    margin: 10px 30px;
+}
+
+.card a.btn {
+    display: block;
+    background: #ef3e36;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: background 250ms;
+    border-radius: 0 0 10px 10px;
+}
+
+.card a.btn:hover {
+    background: #17bebb;
+    transition: background 250ms;
+}
+.card1 .header {
+  background-image: url('../img/baris/chiness.jpg'); 
+}
+
+.card2 .header {
+  background-image: url('../img/baris/japan.webp'); 
+}
+
+.card3 .header {
+  background-image: url('../img/baris/Korean\ Street\ Food.jpg'); 
+}
+
+.card4 .header {
+  background-image: url('../img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
+}
+
+@media (max-width: 992px) {
+    #cont {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(50% - 40px);
+    }
+}
+ 
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+}
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+#cont {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; /
+    padding: 20px;
+    overflow: hidden; 
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    /*background: #fff;*/
+    width: 250px; /* Fixed width for each card */
+    margin: 20px;
+    box-shadow: 0px 0px 30px 2px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+                rgba(241, 119, 4, 0.445) 0px -36px 30px 0px inset, 
+                rgba(228, 104, 4, 0.1) 0px -79px 40px 0px inset, 
+                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card .header {
+    background-size: cover;
+    min-height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .header .icon a .fa-heart-o {
+    position: absolute;
+    left: 85%;
+    bottom: 30.7%;
+    background: #17bebb;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17bebb;
+}
+
+.card .text .food {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+
+.card .text .fa-clock-o, .card .text .fa-users {
+    color: #9b9b9b;
+    margin: 0 30px;
+}
+
+.card .stars {
+    margin: 10px 30px;
+    display: flex;
+}
+
+.card .stars li a i {
+    color: #f8ae0f;
+    font-weight: bold;
+}
+
+.card .info {
+    margin: 10px 30px;
+}
+
+.card a.btn {
+    display: block;
+    background: #ef3e36;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: background 250ms;
+    border-radius: 0 0 10px 10px;
+}
+
+.card a.btn:hover {
+    background: #17bebb;
+    transition: background 250ms;
+}
+.card1 .header {
+    background-image: url('../img/baris/chiness.jpg'); 
+}
+
+.card2 .header {
+    background-image: url('../img/baris/japan.webp'); 
+}
+
+.card3 .header {
+    background-image: url('../img/baris/Korean\ Street\ Food.jpg'); 
+}
+
+.card4 .header {
+    background-image: url('../img/baris/11-Best-Thai-Food-Dishes-Spicy-Salad-1120x732.jpg'); 
+}
+
+@media (max-width: 992px) {
+    #cont {
+        flex-wrap: wrap; 
+    }
+    .card {
+        width: calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 40px); 
+        margin: 20px auto; 
+    }
+}
+
