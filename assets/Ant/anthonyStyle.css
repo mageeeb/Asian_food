@@ -1,0 +1,30 @@
+#containerCarousel,
+#containerCarousel2 {
+    position: relative;
+}
+
+.flecheGauche,
+.flecheDroite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+
+    height: 50px;
+
+
+
+}
+
+.flecheGauche {
+    left: -90px;
+    width: 120px;
+    height: 120px;
+}
+
+.flecheDroite {
+    right: -90px;
+    width: 120px;
+    height: 120px;
+
+}
