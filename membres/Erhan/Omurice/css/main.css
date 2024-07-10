@@ -179,9 +179,9 @@ a:active {
 }
 
 .hero-title {
-  font-size: 40px;
-  line-height: 50px;
-  color: #fff;
+  font-size: 60px;
+  line-height: 450px;
+  color: linear-gradient(to left top, black, red);
   font-weight: 600;
 }
 .hero-title span{
