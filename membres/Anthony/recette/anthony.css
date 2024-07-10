@@ -1,0 +1,27 @@
+@font-face {
+   font-family: 'kareudon';
+   src: url('../recette/assets/fonts/kareudon/Rami.ttf') format('truetype');
+   font-weight: 800;
+   font-style: normal;
+}
+
+#titreRecette {
+   font-family: 'kareudon', sans-serif;
+   font-weight: bold;
+   font-size: 55px;
+
+
+}
+
+.spanRouge {
+   font-size: 90px;
+   color: #610202;
+}
+
+
+#sushi {
+   width: 80%;
+   height: 450px;
+   border-radius: 20px;
+
+}
