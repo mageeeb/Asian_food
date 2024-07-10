@@ -81,7 +81,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  
   transition: all 0.5s;
   z-index: 997;
 }
@@ -91,7 +91,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 150px;
   margin-right: 8px;
 }
 
@@ -107,6 +107,41 @@ h6 {
   color: var(--accent-color);
   font-size: 36px;
 }
+
+#sugoi{
+  width: 150px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  
+}
+#sugoi2{
+  width: 150px;
+  position: relative;
+  left:250px;
+  top: 0px;
+  webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  
+}
+
+.sousMenu li a{
+font-weight: 500px;  
+font-size: 500px;
+}
+
+@font-face {
+  font-family: 'Rami';
+  src: url('../fonts/kareudon/Rami.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+#posizioneNav ul li a{
+  font-family: 'Rami', Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
@@ -139,6 +174,13 @@ h6 {
   .header .navmenu {
     order: 3;
   }
+
+  #sugoi{
+    display: none;
+  }
+  #sugoi2{
+    display: none;
+  }
 }
 
 .scrolled .header {
@@ -154,12 +196,25 @@ h6 {
     padding: 0;
   }
 
+  .iconR{
+    width: 45px;
+    padding-right: 10px;
+  }
+
+  .sousMenu li a{
+    font-weight: 500px;  
+    font-size: 1px;
+    }
+    
+
   .navmenu ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     align-items: center;
+    position: relative;
+    right: 180px;
   }
 
   .navmenu li {
@@ -178,7 +233,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    font-size: 15px;
+    font-size: 35px;
     padding: 0 2px;
     font-family: var(--nav-font);
     font-weight: 500;
@@ -291,6 +346,10 @@ h6 {
     transition: color 0.3s;
   }
 
+  .iconR{
+    display: none;
+  }
+
   .navmenu {
     padding: 0;
     z-index: 9997;
@@ -316,7 +375,7 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 28px;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -408,13 +467,6 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'RamRam';
-  src: url('../fontNav&Footer/Rami.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
 .footer {
   --background-color: var(--alt-background-color);
   --default-color: #ffff;
@@ -430,13 +482,12 @@ h6 {
 .footer .icon {
   color: var(--accent-color);
   margin-right: 15px;
-  margin-top: 15px;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 0;
 }
 
 .footer h4 {
-  font-size: 55px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -663,15 +714,8 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'Guigui';
-  src: url('../fontGui/GuiFont.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-
 .hero {
-  background: linear-gradient(180deg,#FF8914 0%, #FF8914 5%,#ff2147 100%);
+  --background-color: color-mix(in srgb, var(--default-color), transparent 94%);
   width: 100%;
   min-height: 60vh;
   position: relative;
@@ -682,9 +726,8 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 84px;
+  font-size: 64px;
   font-weight: 700;
-  font-family: Guigui;
 }
 
 .hero p {
