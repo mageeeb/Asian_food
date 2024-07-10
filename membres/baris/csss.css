@@ -7,5 +7,17 @@ body{
 
 #imgg{
    
-    max-width: 80%;
+    max-width: 100%;
+    max-height: 95%;
+}
+
+#poulet, #pate, #sauce, #garni {
+    font-size: 2em; 
+    color: #FF6347; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.ingre{
+    font-size: 2em; 
 }

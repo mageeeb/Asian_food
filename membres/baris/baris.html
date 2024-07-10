@@ -102,19 +102,20 @@
  <!--Titre -->
 <h1 class="recettee" style="text-align: center; font-size: 8vh; border: solid black; border-radius: 20;"> Recette</h1>
 <!--Titre -->
-<!--contenu -->
+
+<!--ingrédients -->
 <div class="container my-4">
   <div class="row">
       <div class="col-md-6 d-flex justify-content-center">
           <img id="imgg" class="img img-fluid" style="border: solid black;" src="recette.jpg" alt="plat">
       </div>
       <div class="col-md-6">
-          <h2 class="ingre" style="border: solid black; text-align: center; padding: 10px; background-color: #">Ingrédients</h2>
-          <div class="justify-content-center" style="padding: 15px; border: solid black; background-color: #;">
+          <h2 class="ingre" style="border: solid black; text-align: center; padding: 10px; ">Ingrédients</h2>
+          <div class="justify-content-center" style="padding: 15px; border: solid black;">
             <p>
               Dakgangjeong est un plat coréen de poulet frit en sauce sucrée et épicée. Voici les ingrédients typiques pour préparer Dakgangjeong :
             </p>
-            <h5 style="font-weight: bold;">Pour le poulet :</h5>
+            <h5 id="poulet">Pour le poulet :</h5>
             <ul>
               <li>500 g de morceaux de poulet (cuisses ou ailes désossées)</li>
               <li>1 cuillère à café de sel</li>
@@ -122,14 +123,14 @@
               <li>2 cuillères à soupe de vin de riz (ou de vin blanc sec)</li>
               <li>1 cuillère à soupe de gingembre râpé</li>
             </ul>
-            <h5>Pour la pâte à frire :</h5>
+            <h5 id="pate">Pour la pâte à frire :</h5>
             <ul>
               <li>1/2 tasse de farine de blé</li>
               <li>1/2 tasse de fécule de maïs (ou fécule de pomme de terre)</li>
               <li>1 œuf</li>
               <li>1/2 tasse d'eau froide</li>
             </ul>
-            <h5>Pour la sauce :</h5>
+            <h5 id="sauce">Pour la sauce :</h5>
             <ul>
               <li>2 cuillères à soupe de sauce soja</li>
               <li>2 cuillères à soupe de gochujang (pâte de piment coréenne)</li>
@@ -141,7 +142,7 @@
               <li>1 cuillère à café de graines de sésame</li>
               <li>1 cuillère à soupe d'huile de sésame</li>
             </ul>
-            <h5>Pour la garniture :</h5>
+            <h5 id="garni">Pour la garniture :</h5>
             <ul>
               <li>Graines de sésame grillées</li>
               <li>Cacahuètes ou noix hachées (facultatif)</li>
@@ -150,6 +151,13 @@
       </div>
   </div>
 </div>
+<!--ingrédients -->
+<!--préparation -->
+
+
+
+<!--préparation -->
+<h1 class="recettee" style="text-align: center; font-size: 8vh; border: solid black; border-radius: 20;"> Préparation </h1>
 
 
 
@@ -170,7 +178,7 @@
 
 
 
-
+<!--préparation -->
 <!-- ma recette -->
  <hr>
   <footer class="footer" style="background-image: url(assets/img/baris/footerImg.png);">
@@ -228,5 +236,8 @@
  <!-- Main JS File -->
  <script src="baris.js"></script>
  <script src="assets/js/main.js"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
