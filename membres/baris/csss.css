@@ -1,0 +1,11 @@
+body{
+    background-image: url('back.jpg')!important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#imgg{
+   
+    max-width: 80%;
+}
