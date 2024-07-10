@@ -175,35 +175,52 @@
         <img id="imgg-preparation" class="img img-fluid" src="plat.webp" alt="préparation" data-aos="fade-up" data-aos-delay="100">
       </div>
       <p class="legende-image" data-aos="fade-up" data-aos-delay="200">Image de la préparation finale du Dakgangjeong.</p>
+      <div class="video-container" data-aos="fade-up" data-aos-delay="300">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q8YuR7V_vU?si=KKNrc9mkD6n7qBnl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>
+
 <!--préparation -->
-<<!-- Valeurs Nutritionnelles -->
+
+<!-- Valeurs Nutritionnelles -->
 <div class="container my-5" data-aos="fade-up">
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-10 col-lg-8 col-xl-7 text-center">
-      <h2 class="recettee fw-bold mb-3" data-aos="fade-up">Valeurs Nutritionnelles</h2>
-      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
-        Voici les valeurs nutritionnelles approximatives pour une portion de Dakgangjeong :
-      </p>
-      <ul class="list-unstyled" data-aos="fade-up" data-aos-delay="200">
-        <li><i class="bi bi-bar-chart"></i> Calories : 350</li>
-        <li><i class="bi bi-egg-fried"></i> Protéines : 20g</li>
-        <li><i class="bi bi-graph-up"></i> Glucides : 40g</li>
-        <li><i class="bi bi-droplet"></i> Lipides : 15g</li>
-        <li><i class="bi bi-bar-chart-steps"></i> Fibres : 2g</li>
-        <li><i class="bi bi-bucket"></i> Sodium : 800mg</li>
-      </ul>
+      <h2 class="recettee fw-bold mb-4" data-aos="fade-up">Valeurs <span class="text-green">Nutritionnelles</span></h2>
+      <div class="nutrition-values" data-aos="fade-up" data-aos-delay="100">
+        <div class="nutrition-item">
+          <i class="bi bi-bar-chart"></i> <span>Calories :</span> 350
+        </div>
+        <div class="nutrition-item">
+          <i class="bi bi-egg-fried"></i> <span>Protéines :</span> 20g
+        </div>
+        <div class="nutrition-item">
+          <i class="bi bi-graph-up"></i> <span>Glucides :</span> 40g
+        </div>
+        <div class="nutrition-item">
+          <i class="bi bi-droplet"></i> <span>Lipides :</span> 15g
+        </div>
+        <div class="nutrition-item">
+          <i class="bi bi-bar-chart-steps"></i> <span>Fibres :</span> 2g
+        </div>
+        <div class="nutrition-item">
+          <i class="bi bi-bucket"></i> <span>Sodium :</span> 800mg
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
+<!-- Valeurs Nutritionnelles -->
 
 <!-- Notes et Évaluations -->
 <div class="container my-5" data-aos="fade-up">
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-10 col-lg-8 col-xl-7">
-      <h2 class="recettee fw-bold mb-3 text-center" data-aos="fade-up">Notes et Évaluations</h2>
+      <h2 class="recettee fw-bold mb-3 text-center" data-aos="fade-up">Notes et <span class="text-yellow">Évaluations</span></h2>
       <p class="lead mb-4 text-center" data-aos="fade-up" data-aos-delay="100">
         Donnez votre avis sur cette recette :
       </p>
@@ -211,27 +228,34 @@
         <form>
           <div class="mb-3">
             <label for="note" class="form-label">Note :</label>
-            <select id="note" name="note" class="form-select">
-              <option value="1">1 étoile</option>
-              <option value="2">2 étoiles</option>
-              <option value="3">3 étoiles</option>
-              <option value="4">4 étoiles</option>
-              <option value="5">5 étoiles</option>
-            </select>
+            <div id="star-rating">
+              <input type="radio" id="star5" name="note" value="5" />
+              <label for="star5" title="5 étoiles"><i class="bi bi-star-fill"></i></label>
+              <input type="radio" id="star4" name="note" value="4" />
+              <label for="star4" title="4 étoiles"><i class="bi bi-star-fill"></i></label>
+              <input type="radio" id="star3" name="note" value="3" />
+              <label for="star3" title="3 étoiles"><i class="bi bi-star-fill"></i></label>
+              <input type="radio" id="star2" name="note" value="2" />
+              <label for="star2" title="2 étoiles"><i class="bi bi-star-fill"></i></label>
+              <input type="radio" id="star1" name="note" value="1" />
+              <label for="star1" title="1 étoile"><i class="bi bi-star-fill"></i></label>
+            </div>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 commentaire-container">
             <label for="commentaire" class="form-label">Commentaire :</label>
-            <textarea id="commentaire" name="commentaire" rows="4" cols="50" class="form-control"></textarea>
+            <textarea id="commentaire" name="commentaire" rows="4" class="form-control commentaire-textarea"></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-primary">Soumettre</button>
+            <button type="submit" class="btn-custom">Soumettre</button>
           </div>
+          
         </form>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Notes et Évaluations -->
 
 
 

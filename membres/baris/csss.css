@@ -104,16 +104,16 @@ ol li:before {
     background-image: url('l-intro-1687386179.jpg');
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Placez l'élément derrière le contenu principal */
-    transition: transform 0.5s ease-out; /* Transition fluide */
-    transform: scale(1); /* État initial */
+    z-index: -1; 
+    transition: transform 0.5s ease-out; 
+    transform: scale(1); 
   }
   .bsb-hero-1:hover::before {
-    transform: scale(1.1); /* Zoom de 10% au survol */
+    transform: scale(1.1); 
   }
   .container {
-    position: relative; /* Assurez-vous que le contenu reste empilé au-dessus */
-    z-index: 1; /* Placez le contenu au-dessus de l'image de fond */
+    position: relative; 
+    z-index: 1; 
   }
   .recettee {
     border: solid black;
@@ -132,3 +132,100 @@ ol li:before {
   .legende-image {
     text-align: center;
   }
+
+
+
+
+
+  #star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  #star-rating input[type="radio"] {
+    display: none;
+  }
+  #star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  #star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+  }
+  #star-rating input[type="radio"]:checked ~ label:hover,
+  #star-rating input[type="radio"]:checked ~ label:hover ~ label {
+    color: #ffca2c;
+  }
+  #star-rating label:hover,
+  #star-rating label:hover ~ label {
+    color: #ffca2c;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .text-green {
+    color: green;
+  }
+  .text-yellow {
+    color: rgb(175, 143, 27);
+  }
+
+  .btn-custom {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9800; /* Couleur orange */
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover,
+  .btn-custom:focus {
+    background-color: #f57c00; /* Couleur orange plus foncée au survol */
+  }
+  
+  .btn-custom:focus {
+    outline: none;
+  }
+  
+  .btn-custom:active {
+    transform: translateY(1px); /* Léger effet de pression */
+  }
+  
+  .nutrition-values {
+    padding: 20px;
+  }
+  
+  .nutrition-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nutrition-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .nutrition-item span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .recettee {
+    font-size: 2rem;
+  }
+  
+  .text-green {
+    color: #00b894; /* Vert foncé */
+  }
+  
