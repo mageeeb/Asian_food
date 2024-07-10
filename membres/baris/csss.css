@@ -5,7 +5,246 @@ body{
     background-size: cover;
 }
 
-#imgg{
+#imggg{
    
-    max-width: 80%;
+   max-width: auto;
+   max-height: auto;
+   margin-left: -18px;
+
+
 }
+
+
+
+#poulet, #pate, #sauce, #garni {
+    font-size: 2em; 
+    color: #FF6347; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+.ingre{
+    font-size: 2em; 
+}
+
+.recettee {
+    text-align: center;
+    font-size: 6vh;
+    padding: 20px;
+    border: solid 2px #000;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    color: #333;
+}
+.etape-preparation {
+    border-bottom: solid 2px #000;
+    padding-bottom: 10px;
+}
+.img-container {
+    border: solid 2px #000;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.legende-image {
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+.container {
+    margin-top: 20px;
+}
+ol {
+    counter-reset: steps;
+    padding-left: 0;
+}
+ol li {
+    list-style-type: none;
+    counter-increment: steps;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+ol li:before {
+    content: counter(steps);
+    color: #333;
+    background-color: #f8f9fa;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+
+.bsb-hero-1 {
+    height: 600px; 
+    overflow: hidden; 
+    position: relative; 
+  }
+  .bsb-hero-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('l-intro-1687386179.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+    transition: transform 0.5s ease-out; 
+    transform: scale(1); 
+  }
+  .bsb-hero-1:hover::before {
+    transform: scale(1.1); 
+  }
+  .container {
+    position: relative; 
+    z-index: 1; 
+  }
+  .recettee {
+    border: solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+  .ingre, .etape-preparation {
+    border: solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  .img-container {
+    text-align: center;
+  }
+  .legende-image {
+    text-align: center;
+  }
+
+
+
+
+
+  #star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  #star-rating input[type="radio"] {
+    display: none;
+  }
+  #star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  #star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+  }
+  #star-rating input[type="radio"]:checked ~ label:hover,
+  #star-rating input[type="radio"]:checked ~ label:hover ~ label {
+    color: #ffca2c;
+  }
+  #star-rating label:hover,
+  #star-rating label:hover ~ label {
+    color: #ffca2c;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .text-green {
+    color: green;
+  }
+  .text-yellow {
+    color: rgb(175, 143, 27);
+  }
+
+  .btn-custom {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff9800; 
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover,
+  .btn-custom:focus {
+    background-color: #f57c00; /
+  }
+  
+  .btn-custom:focus {
+    outline: none;
+  }
+  
+  .btn-custom:active {
+    transform: translateY(1px); 
+  }
+  
+  .nutrition-values {
+    padding: 20px;
+  }
+  
+  .nutrition-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nutrition-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .nutrition-item span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .recettee {
+    font-size: 2rem;
+  }
+  
+  .text-green {
+    color: #00b894; 
+  }
+  
+  .btn-spinning {
+    animation: spin 1s linear forwards;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+  
+
+
+
+  
