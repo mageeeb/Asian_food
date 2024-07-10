@@ -226,6 +226,25 @@ ol li:before {
   }
   
   .text-green {
-    color: #00b894; /* Vert foncé */
+    color: #00b894; 
   }
+  
+  .btn-spinning {
+    animation: spin 1s linear forwards;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+  
+
+
+
   

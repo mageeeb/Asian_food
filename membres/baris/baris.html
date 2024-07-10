@@ -19,6 +19,7 @@
     <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
@@ -32,6 +33,7 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="csss.css" rel="stylesheet">
     <link href="footer.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Document</title>
 </head>
@@ -217,7 +219,7 @@
 <!-- Valeurs Nutritionnelles -->
 
 <!-- Notes et Évaluations -->
-<div class="container my-5" data-aos="fade-up">
+<div class="container my-5">
   <div class="row justify-content-md-center">
     <div class="col-12 col-md-10 col-lg-8 col-xl-7">
       <h2 class="recettee fw-bold mb-3 text-center" data-aos="fade-up">Notes et <span class="text-yellow">Évaluations</span></h2>
@@ -225,7 +227,7 @@
         Donnez votre avis sur cette recette :
       </p>
       <div id="evaluations" data-aos="fade-up" data-aos-delay="200">
-        <form>
+        <form id="evaluationForm">
           <div class="mb-3">
             <label for="note" class="form-label">Note :</label>
             <div id="star-rating">
@@ -246,15 +248,13 @@
             <textarea id="commentaire" name="commentaire" rows="4" class="form-control commentaire-textarea"></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn-custom">Soumettre</button>
+            <button type="submit" class="btn btn-custom">Soumettre <span></span></button>
           </div>
-          
         </form>
       </div>
     </div>
   </div>
 </div>
-
 <!-- Notes et Évaluations -->
 
 
