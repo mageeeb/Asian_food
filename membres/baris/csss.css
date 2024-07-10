@@ -90,9 +90,9 @@ ol li:before {
 }
 
 .bsb-hero-1 {
-    height: 600px; /* Hauteur ajustée pour l'exemple */
-    overflow: hidden; /* Masque tout contenu qui dépasse */
-    position: relative; /* Position relative pour les enfants absolus */
+    height: 600px; 
+    overflow: hidden; 
+    position: relative; 
   }
   .bsb-hero-1::before {
     content: '';
@@ -181,7 +181,7 @@ ol li:before {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #ff9800; /* Couleur orange */
+    background-color: #ff9800; 
     border: none;
     border-radius: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -190,7 +190,7 @@ ol li:before {
   
   .btn-custom:hover,
   .btn-custom:focus {
-    background-color: #f57c00; /* Couleur orange plus foncée au survol */
+    background-color: #f57c00; /
   }
   
   .btn-custom:focus {
@@ -198,7 +198,7 @@ ol li:before {
   }
   
   .btn-custom:active {
-    transform: translateY(1px); /* Léger effet de pression */
+    transform: translateY(1px); 
   }
   
   .nutrition-values {

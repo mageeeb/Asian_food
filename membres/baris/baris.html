@@ -228,9 +228,9 @@
       </p>
       <div id="evaluations" data-aos="fade-up" data-aos-delay="200">
         <form id="evaluationForm">
-          <div class="mb-3">
+          <div class="mb-4">
             <label for="note" class="form-label">Note :</label>
-            <div id="star-rating">
+            <div id="star-rating" class="text-center">
               <input type="radio" id="star5" name="note" value="5" />
               <label for="star5" title="5 étoiles"><i class="bi bi-star-fill"></i></label>
               <input type="radio" id="star4" name="note" value="4" />
@@ -243,19 +243,29 @@
               <label for="star1" title="1 étoile"><i class="bi bi-star-fill"></i></label>
             </div>
           </div>
-          <div class="mb-3 commentaire-container">
+          <div class="mb-4 commentaire-container">
+            <label for="nomUtilisateur" class="form-label">Votre nom :</label>
+            <input type="text" id="nomUtilisateur" name="nomUtilisateur" class="form-control" placeholder="Votre nom" required />
+          </div>
+          <div class="mb-4 commentaire-container">
             <label for="commentaire" class="form-label">Commentaire :</label>
-            <textarea id="commentaire" name="commentaire" rows="4" class="form-control commentaire-textarea"></textarea>
+            <textarea id="commentaire" name="commentaire" rows="4" class="form-control commentaire-textarea" placeholder="Entrez votre commentaire ici..." required></textarea>
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-custom">Soumettre <span></span></button>
+            <button type="submit" class="btn btn-custom px-5">Soumettre <span class="bi bi-arrow-right"></span></button>
           </div>
         </form>
+      </div>
+
+      <!-- Section pour afficher les évaluations -->
+      <div id="evaluationsList" class="mt-5">
+        <h3 class="fw-bold mb-3">Évaluations des utilisateurs</h3>
+        <div id="commentList"></div>
       </div>
     </div>
   </div>
 </div>
-<!-- Notes et Évaluations -->
+
 
 
 
