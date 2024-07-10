@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Restaurant One Page Bootstrap theme</title>
+		<title>Sugoi</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- CSS
@@ -20,31 +20,106 @@
 		<link rel="stylesheet" href="css/main.css">
         <!-- Responsive Stylesheet -->
 		<link rel="stylesheet" href="css/responsive.css">
-		<!-- Js -->
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
+
+
+        <!-- Vendor CSS Files Rami -->
+        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- Favicons Rami-->
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Main CSS File Rami -->
+        <link href="../assets/css/main.css" rel="stylesheet">
+        <link href="../assets/css/baris.css" rel="stylesheet">
+        <link href="../assets/css/footer.css" rel="stylesheet">
+
+
+
+
+
+		
     <style>
-        h3, span {
-  background: linear-gradient(to left top, black, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: japanese;
-}
-@font-face {
-  font-family: japanese;
-  src: url(./fonts/NightinTokyo.ttf);
-}
+        h3, span, p {
+    background: linear-gradient(to left top, black, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: japanese;
+    }
+
+    @font-face {
+    font-family: japanese;
+    src: url(./fonts/NightinTokyo.ttf);
+    }
        
     </style>
 	</head>
-	<body>
+	<body class="index-page">
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            <img  id="sugoi2"  src="../assets/img/logo/vagues-navbar-nobackground.png" alt="">
+            <div id="posizioneNav" class="container position-relative d-flex align-items-center justify-content-between">
+        
+              <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+               <img  id="fox" src="../assets/img/logo/fox-logo.png" alt="">
+                <span></span>
+              </a>
+        
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a class="fs-sm-4" href="#hero" class="active"><img class="iconR" src="../assets/img/button/home.png" alt=""> Accueil<br></a></li>
+                 
+                  
+                    <li class="dropdown"><a href="#menu"><span><img style="padding-left: 5px;"  class="iconR" src="../assets/img/button/ramen.png" alt=""> Recettes</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul class="sousMenu">
+                      <li><a class="fs-4" href="#">Recettes 1</a></li>
+                      <li><a class="fs-4" href="#">Recettes 2</a></li>
+                      <li><a class="fs-4" href="#">Recettes 3</a></li>
+                      <li><a class="fs-4" href="#">Recettes 4</a></li>
+                      <li><a class="fs-4" href="#">Recettes 5</a></li>
+        
+                    </ul>
+                 
+                  <li><a href="#abouts"><img class="iconR" src="./assets/img/button/about.png" alt="">About Us</a></li>
+                  <li><a href="#chefs"><img class="iconR" src="./assets/img/button/contact-book.png" alt="">Contact</a></li>
+                  
+                  
+                 </li>
+                  <img  id="sugoi"  src="../assets/img/logo/vagues-navbar-nobackground.png" alt="">
+                  <script>
+                   $(document).ready(function(){
+            $("#sugoi").animate({left: '420px'}, {duration : 1050});
+            $("#sugoi2").animate({left: '-10px'}, {duration : 1050});
+            });
+        
+        
+        
+                  </script>
+                  
+                </ul>
+                
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                
+              </nav>
+        
+             
+        
+            </div>
+          </header>
+
+
+
 	<!--
 	header-img start 
 	============================== -->
@@ -162,7 +237,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>1. Mélangez les ingrédients de la sauce – ketchup, sauce soja, sauce Tonkatsu, miel, eau et lait dans un bol ou une grande tasse à mesurer. Mettre de côté.</h2>
-                                            <div class="border-bottom"></div>                                            
                                         </div>                                        
                                     </div>                                    
                                 </li>
@@ -171,7 +245,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>2. Préchauffer une poêle et ajouter l'huile de cuisson et la farine. Cuire à feu moyen à moyen-vif jusqu'à ce que le liquide devienne brun foncé. Cela prend environ 5 à 7 minutes. Remuer de temps en temps. Réduire le feu au minimum.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -180,7 +253,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>3. Versez la sauce de l'étape 1 et remuez bien. Augmentez le feu et faites cuire à feu moyen-doux à moyen jusqu'à ce que la sauce épaississe (environ 8 à 10 minutes). Remuez souvent. Mettre de côté.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -282,8 +354,7 @@
                                 <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                                     <div class="item">
                                         <div class="item-title">
-                                            <h2>1. Préchauffez une poêle et ajoutez un peu d'huile de cuisson. Faire revenir la carotte, l'oignon, le poivron vert et le jambon fumé jusqu'à ce que tous les ingrédients soient cuits.</h2>
-                                            <div class="border-bottom"></div>                                            
+                                            <h2>1. Préchauffez une poêle et ajoutez un peu d'huile de cuisson. Faire revenir la carotte, l'oignon, le poivron vert et le jambon fumé jusqu'à ce que tous les ingrédients soient cuits.</h2>                                          
                                         </div>                                        
                                     </div>                                    
                                 </li>
@@ -292,7 +363,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>2. Ajoutez le riz et l'assaisonnement pour riz et mélangez bien pendant 1 à 2 minutes.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -301,7 +371,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>3. Éteignez le feu. Couvrir de papier d'aluminium ou d'un couvercle pour garder le riz au chaud pendant que vous préparez les autres ingrédients.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -310,7 +379,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>4. Au moment de servir, façonnez le riz dans un petit bol pour former des monticules de riz. Placez l'assiette de service sur le bol et retournez. Retirez le bol.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -370,8 +438,7 @@
                                 <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
                                     <div class="item">
                                         <div class="item-title">
-                                            <h2>1. Battez les œufs dans un bol. Pour obtenir une texture onctueuse, tamisez les œufs. (C'est aussi un des points clés de la réussite car cela permet à l'omelette de tourner en douceur). Ajouter une pincée de sel.</h2>
-                                            <div class="border-bottom"></div>                                            
+                                            <h2>1. Battez les œufs dans un bol. Pour obtenir une texture onctueuse, tamisez les œufs. (C'est aussi un des points clés de la réussite car cela permet à l'omelette de tourner en douceur). Ajouter une pincée de sel.</h2>                                         
                                         </div>                                        
                                     </div>                                    
                                 </li>
@@ -380,7 +447,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>2. Preheat a non-stick frying pan over medium high heat. (It should be heated well enough for the egg to bubble up when you pour it in.) Add some cooking oil and spread it all over the pan.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -388,7 +454,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>3. Versez l'œuf battu dans la poêle et faites-le cuire jusqu'à ce que le bord (environ 3 mm) soit cuit. Mais un indicateur plus simple est lorsque l'omelette commence à former des bulles d'air au milieu de la poêle. Vous devriez rechercher des bulles de taille un peu plus grosse.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -397,7 +462,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>4. Tenez une baguette en bois dans chaque main en diagonale par rapport à vous et poussez l'œuf du bord vers le centre tout en maintenant un espace d'environ 4 à 5 cm (1,5 à 2 pouces) entre chaque baguette, et commencez à faire tournoyer vos baguettes dans une direction. En tenant l'œuf en diagonale plutôt que parallèlement à vous-même, vous aurez plus d'espace pour faire tourner l'œuf.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -406,7 +470,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>5. Tenez les baguettes d'une main et faites glisser lentement l'omelette de la poêle sur le riz façonné.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -415,7 +478,6 @@
                                     <div class="item">
                                         <div class="item-title">
                                             <h2>6. Versez la sauce demi-glace (ou le ketchup si vous n'avez pas fait la sauce) et servez.</h2>
-                                            <div class="border-bottom"></div>
                                         </div>
                                     </div>
                                 </li>
@@ -428,138 +490,77 @@
         </div><!-- .containe close -->
     </section><!-- #price close -->
 
-    <section id="contact-us">
+    <footer class="footer" style="background-image: url(../assets/img/baris/footerImg.png);">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">Contact <span>US</span></h1>
-                        <form>
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your full name">
-                            </div>
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
-                                <input type="text" class="form-control" placeholder="Your Email Address">
-                            </div>
-                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
-                                <textarea class="form-control" rows="3" placeholder="Your message, please be clear"></textarea>
-                            </div>
-                        </form>
-                        <a class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms" href="#" role="button">send message</a>
-                    </div>
-                </div><!-- .col-md-12 close -->
-            </div><!-- .row close -->
-        </div><!-- .container close -->
-    </section><!-- #contact-us close -->
-
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="block wow fadeInLeft"  data-wow-delay="200ms">
-                        <h3>Company <span>INFO</span></h3>
-                        <div class="info">
-                            <ul>
-                                <li>
-                                  <h4><i class="fa fa-phone"></i>Telephone number</h4>
-                                  <p>(000) 123 456 78, (000) 910 1112</p>
-                                    
-                                </li>
-                                <li>
-                                  <h4><i class="fa fa-map-marker"></i>Address</h4>
-                                  <p>1234 Chicken Road, BreadVillage</p>
-                                </li>
-                                <li>
-                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
-                                  <p>food@chicken.com</p>
-                                  
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- .col-md-4 close -->
-                <div class="col-md-4">
-                    <div class="block wow fadeInLeft"  data-wow-delay="700ms">
-                        <h3>LATEST <span>BLOG</span></h3>
-                        <div class="blog">
-                            <ul>
-                                <li>
-                                    <h4><a href="#">Jan 12-2016</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
-                                </li>
-                                <li>
-                                    <h4><a href="#">Dec 19-2015</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
-                                </li>
-                            </ul>                
-                        </div>
-                    </div>
-                </div>
-                <!-- .col-md-4 close -->
-                <div class="col-md-4">
-                    <div class="block wow fadeInLeft"  data-wow-delay="1100ms">
-                        <div class="gallary">
-                            <h3>PICTURE <span>STREAM</span></h3>
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="social-media-link">
-                            <h3>Join us on social <span>networks</span></h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-pinterest"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- .col-md-4 close -->
-            </div><!-- .row close -->
-        </div><!-- .containe close -->
-    </section><!-- #footer close -->
-    <!--
-    footer-bottom  start
-    ============================= -->
-    <footer id="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="block">
-                        <p>Copyright &copy; 2016 By <a href="http://www.gridgum.com">Gridgum</a></p>
-                    </div>
-                </div>
+          <div class="row">
+    
+            <div class="footer-col footer-col-logo foot">
+              <a href="#"><img id="imgg"src="../assets/img/baris/fox-logo.png" alt="Logo" class="footer-logo"></a>
             </div>
+    
+            <div class="footer-col" id="recettee">
+              <h4>Dernières recettes</h4>
+              <ul>
+                <li><a href="#">recettes 1</a></li>
+                <li><a href="#">recettes 2</a></li>
+                <li><a href="#">recettes 3</a></li>
+                <li><a href="#">recettes 4</a></li>
+                <li><a href="#">recettes 5</a></li>
+                <li><a href="#">recettes 6</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col newsletter-col" id="newss">
+              <h4>Notre newsletter</h4>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+              </form>
+            </div>
+    
+            <div class="footer-col" id="sociall-footer">
+              <h4>Suivez nous</h4>
+              <div class="social-links">
+                <a href="#" class="facebook"><img src="../assets/img/baris/face.png" alt="Facebook"></a>
+                <a href="#" class="twitter"><img src="../assets/img/baris/twit.png" alt="Twitter"></a>
+                <a href="#" class="instagram"><img src="../assets/img/baris/instaa.png" alt="Instagram"></a>
+                <a href="#" class="linkedin"><img src="../assets/img/baris/linkin.png" alt="LinkedIn"></a>
+              </div>
+            </div>
+    
+          </div>
         </div>
-    </footer>
+      </footer>
+      <div class="footer-colll">
+        <p>&copy; 2024 Baris, Anthony, Marwan, Lee, Guilaume, Tevin, Erhan, Rami / AsianFood. Tous droits réservés.</p>
+      </div>
+
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>
+
+    
+        <!-- Vendor JS Files Rami-->
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/vendor/php-email-form/validate.js"></script>
+        <script src="../assets/vendor/aos/aos.js"></script>
+        <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Main JS File Rami-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/baris.js"></script>
+    
 	</body>
 </html>
