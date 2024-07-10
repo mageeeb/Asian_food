@@ -4,3 +4,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#imgg{
+   
+    max-width: 80%;
+}
