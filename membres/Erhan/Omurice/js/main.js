@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
- $("#owl-example").owlCarousel({
+ $(".owl-example").owlCarousel({
     // Most important owl features
     items : 4,
     pagination : true,
