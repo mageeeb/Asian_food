@@ -226,8 +226,8 @@ a:active {
 }
 .hero-section {
   height: 100%;
-  padding-bottom: 60px;
-  padding-top: 200px;
+  padding-bottom: 250px;
+  padding-top: 250px;
   overflow: hidden;
 }
 .hero-section .container {
