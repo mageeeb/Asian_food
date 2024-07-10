@@ -36,3 +36,9 @@
    width:25px;
    height:25px;
 }
+#sushiSteps{
+   height:80%;
+   border-radius: 125px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
