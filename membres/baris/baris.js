@@ -9,23 +9,20 @@ $(document).ready(function() {
     });
   });
 
-
   document.addEventListener('DOMContentLoaded', function() {
     const evaluationForm = document.getElementById('evaluationForm');
     const commentList = document.getElementById('commentList');
 
     // Fonction pour créer une carte de commentaire avec options de suppression
     function createCommentCard(nomUtilisateur, commentaire, ratingValue) {
-      const newComment = `
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">${nomUtilisateur}</h5>
-            <p class="card-text">${commentaire}</p>
-            <div>Note :
-              ${Array.from({ length: parseInt(ratingValue, 10) }, () => '<i class="bi bi-star-fill"></i>').join('')}
-            </div>
-            <button type="button" class="btn btn-sm btn-danger mt-2 delete-comment">Supprimer</button>
-          </div>
+      const newComment = document.createElement('div');
+      newComment.classList.add('card', 'mb-3', 'comment-card');
+      newComment.innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">${nomUtilisateur}</h5>
+          <div>Note : ${Array(parseInt(ratingValue, 10)).fill('<i class="bi bi-star-fill"></i>').join('')}</div>
+          <p class="card-text">${commentaire}</p>
+          <button type="button" class="btn btn-sm btn-danger delete-comment">Supprimer</button>
         </div>
       `;
       return newComment;
@@ -36,7 +33,7 @@ $(document).ready(function() {
       event.preventDefault();
 
       // Récupérer la note sélectionnée
-      const selectedRating = document.querySelector('input[name="note"]:checked');
+      const selectedRating = document.querySelector('input[name="rating"]:checked');
       const ratingValue = selectedRating ? selectedRating.value : null;
 
       // Récupérer le commentaire et le nom de l'utilisateur
@@ -52,20 +49,21 @@ $(document).ready(function() {
       const newComment = createCommentCard(nomUtilisateur, commentaire, ratingValue);
 
       // Ajouter le nouveau commentaire à la liste
-      commentList.insertAdjacentHTML('beforeend', newComment);
+      commentList.appendChild(newComment);
 
       // Réinitialiser le formulaire
       evaluationForm.reset();
+
+      // Faire défiler jusqu'au bas de la liste des commentaires
+      newComment.scrollIntoView({ behavior: 'smooth', block: 'end' });
     });
 
     // Supprimer un commentaire
     commentList.addEventListener('click', function(event) {
       if (event.target.classList.contains('delete-comment')) {
-        const commentCard = event.target.closest('.card');
+        const commentCard = event.target.closest('.comment-card');
         commentCard.remove();
       }
     });
   });
-
-
   

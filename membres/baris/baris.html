@@ -187,8 +187,8 @@
 <!--préparation -->
 
 <!-- Valeurs Nutritionnelles -->
-<div class="container my-5" data-aos="fade-up">
-  <div class="row justify-content-md-center">
+<div class="container my-5 d-flex align-items-center justify-content-center min-vh-100">
+  <div class="row w-100 justify-content-center">
     <div class="col-12 col-md-10 col-lg-8 col-xl-7 text-center">
       <h2 class="recettee fw-bold mb-4" data-aos="fade-up">Valeurs <span class="text-green">Nutritionnelles</span></h2>
       <div class="nutrition-values" data-aos="fade-up" data-aos-delay="100">
@@ -216,8 +216,6 @@
 </div>
 
 
-<!-- Valeurs Nutritionnelles -->
-
 <!-- Notes et Évaluations -->
 <div class="container my-5">
   <div class="row justify-content-md-center">
@@ -230,17 +228,17 @@
         <form id="evaluationForm">
           <div class="mb-4">
             <label for="note" class="form-label">Note :</label>
-            <div id="star-rating" class="text-center">
-              <input type="radio" id="star5" name="note" value="5" />
-              <label for="star5" title="5 étoiles"><i class="bi bi-star-fill"></i></label>
-              <input type="radio" id="star4" name="note" value="4" />
-              <label for="star4" title="4 étoiles"><i class="bi bi-star-fill"></i></label>
-              <input type="radio" id="star3" name="note" value="3" />
-              <label for="star3" title="3 étoiles"><i class="bi bi-star-fill"></i></label>
-              <input type="radio" id="star2" name="note" value="2" />
-              <label for="star2" title="2 étoiles"><i class="bi bi-star-fill"></i></label>
-              <input type="radio" id="star1" name="note" value="1" />
-              <label for="star1" title="1 étoile"><i class="bi bi-star-fill"></i></label>
+            <div id="star-rating">
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1 star">★</label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 stars">★</label>
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5 stars">★</label>
             </div>
           </div>
           <div class="mb-4 commentaire-container">
@@ -265,6 +263,7 @@
     </div>
   </div>
 </div>
+
 
 
 

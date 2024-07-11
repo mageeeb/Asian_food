@@ -1,8 +1,6 @@
 body{
     background-image: url('back.jpg')!important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  
 }
 
 #imggg{
@@ -133,47 +131,56 @@ ol li:before {
     text-align: center;
   }
 
-
-
-
-
+  /* étoiles */
   #star-rating {
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse; 
     gap: 10px;
   }
+  
   #star-rating input[type="radio"] {
     display: none;
   }
+  
   #star-rating label {
     font-size: 2rem;
     color: #ccc;
     cursor: pointer;
   }
+  
   #star-rating input[type="radio"]:checked ~ label {
-    color: #ffc107;
+    color: #ccc;
   }
-  #star-rating input[type="radio"]:checked ~ label:hover,
-  #star-rating input[type="radio"]:checked ~ label:hover ~ label {
-    color: #ffca2c;
-  }
+  
   #star-rating label:hover,
   #star-rating label:hover ~ label {
     color: #ffca2c;
   }
+  
+  #star-rating input[type="radio"]:checked ~ label,
+  #star-rating input[type="radio"]:checked ~ label ~ label {
+    color: #ffc107;
+  }
+  /* Inverse l'ordre des éléments */
+
+
+/* nutri et eval */
+  .text-green {
+    color: green;
+  }
+  .text-yellow {
+    color: rgb(175, 143, 27);
+  }
+/* nutri et eval */
+
+
   .btn-primary {
     background-color: #007bff;
     border: none;
   }
   .btn-primary:hover {
     background-color: #0056b3;
-  }
-
-  .text-green {
-    color: green;
-  }
-  .text-yellow {
-    color: rgb(175, 143, 27);
   }
 
   .btn-custom {
@@ -201,25 +208,38 @@ ol li:before {
     transform: translateY(1px); 
   }
   
+
+/* nutri */
   .nutrition-values {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    max-width: 700px; 
+    margin: 0 auto; 
   }
   
   .nutrition-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px; 
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%; 
   }
   
   .nutrition-item i {
     font-size: 24px;
-    margin-right: 10px;
+    margin-right: 15px; /
   }
   
   .nutrition-item span {
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: 10px; 
   }
+  /* nutri */
+
+
   
   .recettee {
     font-size: 2rem;
@@ -239,10 +259,26 @@ ol li:before {
     }
   }
 
+  .comment-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-card .delete-comment {
+    float: right;
+  }
 
 
 
 
+
+
+
+
+  
   
 
 
