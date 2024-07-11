@@ -23,6 +23,14 @@ $(document).ready(function() {
           <div>Note : ${Array(parseInt(ratingValue, 10)).fill('<i class="bi bi-star-fill"></i>').join('')}</div>
           <p class="card-text">${commentaire}</p>
           <button type="button" class="btn btn-sm btn-danger delete-comment">Supprimer</button>
+      const newComment = document.createElement('div');
+      newComment.classList.add('card', 'mb-3', 'comment-card');
+      newComment.innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">${nomUtilisateur}</h5>
+          <div>Note : ${Array(parseInt(ratingValue, 10)).fill('<i class="bi bi-star-fill"></i>').join('')}</div>
+          <p class="card-text">${commentaire}</p>
+          <button type="button" class="btn btn-sm btn-danger delete-comment">Supprimer</button>
         </div>
       `;
       return newComment;
@@ -33,6 +41,7 @@ $(document).ready(function() {
       event.preventDefault();
 
       // Récupérer la note sélectionnée
+      const selectedRating = document.querySelector('input[name="rating"]:checked');
       const selectedRating = document.querySelector('input[name="rating"]:checked');
       const ratingValue = selectedRating ? selectedRating.value : null;
 
@@ -50,9 +59,13 @@ $(document).ready(function() {
 
       // Ajouter le nouveau commentaire à la liste
       commentList.appendChild(newComment);
+      commentList.appendChild(newComment);
 
       // Réinitialiser le formulaire
       evaluationForm.reset();
+
+      // Faire défiler jusqu'au bas de la liste des commentaires
+      newComment.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
       // Faire défiler jusqu'au bas de la liste des commentaires
       newComment.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -61,6 +74,7 @@ $(document).ready(function() {
     // Supprimer un commentaire
     commentList.addEventListener('click', function(event) {
       if (event.target.classList.contains('delete-comment')) {
+        const commentCard = event.target.closest('.comment-card');
         const commentCard = event.target.closest('.comment-card');
         commentCard.remove();
       }
