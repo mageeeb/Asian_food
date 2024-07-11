@@ -1,0 +1,108 @@
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+#TempsMar{
+    display: none;
+}
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.fadeInRightT {
+    animation-name: fadeInRight;
+    animation-duration: 2.3s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRightTT {
+    animation-name: fadeInRight;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRightTTT {
+    animation-name: fadeInRight;
+    animation-duration: 2.7s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRightTTTT {
+    animation-name: fadeInRight;
+    animation-duration: 2.8s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRightTTTTT {
+    animation-name: fadeInRight;
+    animation-duration: 2.9s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRightTTTTTT {
+    animation-name: fadeInRight;
+    animation-duration: 3.1s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRightTTTTTTT {
+    animation-name: fadeInRight;
+    animation-duration: 3.2s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRieght {
+    animation-name: fadeInRight;
+    animation-duration: 3.3s;
+    animation-fill-mode: both;
+  }
+
+  .fadeInRiieght {
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
+
+  @media screen and (min-width: 990px) {
+    #chefviepetit{
+      margin-left: 200px;
+    }
+   
+  }
+
+  @media screen and (max-width: 990px) {
+    #chefviepetit{
+      margin-left: 100px;
+    }
+  }
